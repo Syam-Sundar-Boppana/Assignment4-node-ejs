@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title%></title>
+    <style>
+        nav{
+            display: flex;
+        }
+        p{
+            margin:10px;
+        }
+        li{
+            list-style: none;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <p><a href="/">Home</a></p>
+            <p><a href="/users">Users</a></p>
+        </nav>
+    </header>
     <% if(data.length > 0) { %> 
         <ul>
             <% for(let name of data){ %>
